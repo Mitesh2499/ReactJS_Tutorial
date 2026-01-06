@@ -22,6 +22,7 @@ function About() {
       <Child1 data="Hello From About Page">
         <Child2 data="This is Child 2 Data" />
         <h2>This is Child Content</h2>
+        <h2>This is Child Content</h2>
         <h2>This is Child Content 2</h2>
       </Child1>
     </div>
