@@ -78,19 +78,19 @@ function TodoApp() {
       )}
 
       <h5>TodoApp</h5>
-      {user.role.toLowerCase() === "admin" ? (
-        <>
-          <input
-            type="text"
-            placeholder="Todo title"
-            value={newTodo}
-            onChange={(e) => setNewTodo(e.target.value)}
-          />
-          <button onClick={handleAddTodo}>Add Todo</button>
-        </>
-      ) : (
+      {/* {user.role.toLowerCase() === "admin" ? ( */}
+      <>
+        <input
+          type="text"
+          placeholder="Todo title"
+          value={newTodo}
+          onChange={(e) => setNewTodo(e.target.value)}
+        />
+        <button onClick={handleAddTodo}>Add Todo</button>
+      </>
+      {/* ) : (
         <></>
-      )}
+      )} */}
       {todos.map((item) => (
         <div key={item._id}>
           {item._id} - {item.title} - {item.description}
